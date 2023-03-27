@@ -1,0 +1,40 @@
+.cardsDisplay{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
+    padding: 2%;
+    justify-content: space-around;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    min-width:25%;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2%;
+    align-self: center;
+    cursor: pointer;
+}
+.flag{
+    font-size: larger;
+    font-weight: bold;
+
+}
+.card:hover{
+    background-color: #FE6244;
+    color: white;
+}
+
+
+@media (max-width:780px) {
+    .cardsDisplay{
+        grid-template-columns: 40% 40%;
+    }
+}
+@media (max-width:480px) {
+    .cardsDisplay{
+        grid-template-columns: auto;
+    }
+}
