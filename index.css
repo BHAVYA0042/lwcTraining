@@ -1,5 +1,5 @@
 .cardsDisplay{
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 30% 30% 30%;
     gap: 20px;
     padding: 2%;
@@ -28,13 +28,4 @@
 }
 
 
-@media (max-width:780px) {
-    .cardsDisplay{
-        grid-template-columns: 40% 40%;
-    }
-}
-@media (max-width:480px) {
-    .cardsDisplay{
-        grid-template-columns: auto;
-    }
-}
+

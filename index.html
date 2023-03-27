@@ -7,10 +7,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <script type="module" src="index.js"></script>
-
+    <style>
+        @media (max-width:780px) {
+            .cardsDisplay{
+                grid-template-columns: 40% 40%;
+            }
+        }
+        @media (max-width:480px) {
+            .cardsDisplay{
+                grid-template-columns: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="cardsDisplay" >
+    <div class="cardsDisplay" style="display:grid" >
     </div>
     
   
