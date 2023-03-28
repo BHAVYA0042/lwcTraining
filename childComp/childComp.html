@@ -1,0 +1,10 @@
+<template>
+    <slot name="header"></slot>
+    <template for:each={peopleData} for:item="people">
+        <div class='slds-m-around_medium' key={people.Name}>
+            <p>{people.Name}</p>
+            <p>{people.Age}</p>
+            <lightning-button label="Update Data" onclick={handleChange}></lightning-button>
+        </div>
+    </template>
+</template>
